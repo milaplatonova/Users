@@ -51,7 +51,8 @@ Tuples are used to return multiple values from functions: a tuple allows to grou
 **Alerts**  
 Alerts are displayed when the app requires additional acknowledgment from the user (confirmation of intention to make a call, to send a message or an e-mail).  
 
-![Users Alert 1](Demo/UsersAlert1.png) ![Users Alert 2](Demo/UsersAlert2.png)  
+![Users Alert 1](Demo/UsersAlert1.png) | ![Users Alert 2](Demo/UsersAlert2.png)
+:------------------------------------: | :------------------------------------:
   
 **Extensions**  
 Extensions are used to improve code organization. The code is splitted into separate extension blocks in order to avoid big and messy UIViewController classes.  
