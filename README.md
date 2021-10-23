@@ -49,7 +49,7 @@ The project provides a way of customizing Table & Collection Views by adding ext
 Tuples are used to return multiple values from functions: a tuple allows to group together multiple values of different types which can then be returned from a function as a single entity.  
   
 **Alerts**  
-Alerts are displayed when the app requires additional acknowledgment from the user (confirmation of intention to make a call, to send a message or an e-mail).  
+Alerts are displayed when the app requires additional acknowledgment from the user (confirmation of intention to make a call, to send a message or an e-mail):  
 
 ![Users Alert 1](Demo/UsersAlert1.png) | ![Users Alert 2](Demo/UsersAlert2.png)
 :------------------------------------: | :------------------------------------:
@@ -93,5 +93,5 @@ To retrieve a random user information Users app uses the [Random user generator 
 ## Contacts
 Lyudmila Platonova  
 :email: milaplatonova@icloud.com  
-:bust_in_silhouette: [LinkedIn](linkedin.com/in/lyudmila-platonova-916097222)
+:bust_in_silhouette: [LinkedIn](https://www.linkedin.com/in/lyudmilaplatonova/)
 
