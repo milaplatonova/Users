@@ -56,8 +56,7 @@ class SearchViewController: UIViewController, SearchingProtocol {
     private var pendingRequestWorkItem: DispatchWorkItem?
     
     func customizeSearchController (_ controller: UISearchController) {
-        //  for informing the class of any text changes within the UISearchBar:
-//        controller.searchResultsUpdater = self
+
         // FALSE - if the current view was setted to show the results, TRUE (default) - when another view controller is used for the searchResultsController:
         controller.obscuresBackgroundDuringPresentation = false
         controller.searchBar.placeholder = "Search by name, city or country"
@@ -72,13 +71,6 @@ class SearchViewController: UIViewController, SearchingProtocol {
     
 }
 
-//extension SearchViewController: UISearchResultsUpdating {
-//    func updateSearchResults(for searchController: UISearchController) {
-//     let searchBar = searchController.searchBar
-//     let category = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-//     filterContentForSearchText(searchBar.text!, category: category)
-//   }
-// }
 
  extension SearchViewController: UISearchBarDelegate {
    
