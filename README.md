@@ -62,6 +62,9 @@ The MessageUI framework is used for presenting standard composition interfaces f
   
 **Alamofire**  
 Alamofire framework is used to make a HTTPS request and parse a JSON respond.  
+  
+**GCD**  
+The app uses an asynchronous dispatch queue to make a network request.  
 
 ## Features
 * iPhone and iPad realization
