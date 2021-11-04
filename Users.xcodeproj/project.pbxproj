@@ -15,15 +15,12 @@
 		FD420346267A687A004811BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD420345267A687A004811BC /* User.swift */; };
 		FD42034E267A6A89004811BC /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD42034C267A6A89004811BC /* UsersTableViewCell.swift */; };
 		FD42034F267A6A89004811BC /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD42034D267A6A89004811BC /* UsersTableViewCell.xib */; };
-		FD43F83A270B5D2F00157522 /* MailMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD43F839270B5D2F00157522 /* MailMessage.swift */; };
 		FD48A5A326CC02F900E2CE77 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD48A5A226CC02F900E2CE77 /* Singleton.swift */; };
 		FD48A5A826CCE35700E2CE77 /* DetailedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD48A5A726CCE35700E2CE77 /* DetailedViewController.storyboard */; };
 		FD48A5AA26CCE8C000E2CE77 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD48A5A926CCE8C000E2CE77 /* DetailedViewController.swift */; };
 		FD48A5AE26CE7D2000E2CE77 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD48A5AD26CE7D2000E2CE77 /* MessageUI.framework */; };
-		FD48A5B126D517B100E2CE77 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD48A5B026D517B100E2CE77 /* TableView.swift */; };
 		FD48A5B426D51E6A00E2CE77 /* UsersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD48A5B226D51E6900E2CE77 /* UsersCollectionViewCell.swift */; };
 		FD48A5B526D51E6A00E2CE77 /* UsersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD48A5B326D51E6900E2CE77 /* UsersCollectionViewCell.xib */; };
-		FD48A5B726D5243400E2CE77 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD48A5B626D5243400E2CE77 /* CollectionView.swift */; };
 		FD48A5B926D5324800E2CE77 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD48A5B826D5324800E2CE77 /* SectionHeader.swift */; };
 		FD6E77A8265DA4FE000110FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6E77A7265DA4FE000110FC /* AppDelegate.swift */; };
 		FD6E77AA265DA4FE000110FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6E77A9265DA4FE000110FC /* SceneDelegate.swift */; };
@@ -48,15 +45,12 @@
 		FD420345267A687A004811BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FD42034C267A6A89004811BC /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		FD42034D267A6A89004811BC /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
-		FD43F839270B5D2F00157522 /* MailMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailMessage.swift; sourceTree = "<group>"; };
 		FD48A5A226CC02F900E2CE77 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		FD48A5A726CCE35700E2CE77 /* DetailedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailedViewController.storyboard; sourceTree = "<group>"; };
 		FD48A5A926CCE8C000E2CE77 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		FD48A5AD26CE7D2000E2CE77 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		FD48A5B026D517B100E2CE77 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		FD48A5B226D51E6900E2CE77 /* UsersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD48A5B326D51E6900E2CE77 /* UsersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersCollectionViewCell.xib; sourceTree = "<group>"; };
-		FD48A5B626D5243400E2CE77 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		FD48A5B826D5324800E2CE77 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		FD6E77A4265DA4FE000110FC /* Users.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Users.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6E77A7265DA4FE000110FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,10 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				FD2CA50D26D7CB460019D53A /* GradientBackground.swift */,
-				FD48A5B026D517B100E2CE77 /* TableView.swift */,
-				FD48A5B626D5243400E2CE77 /* CollectionView.swift */,
 				FD2CA51326DE44430019D53A /* SearchViewController.swift */,
-				FD43F839270B5D2F00157522 /* MailMessage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -231,8 +222,7 @@
 				FD6E77C2265DA5FC000110FC /* TableViewController.swift */,
 				FD6E77C5265DA60E000110FC /* TableViewController.storyboard */,
 			);
-			name = Table;
-			path = "New Group";
+			path = Table;
 			sourceTree = "<group>";
 		};
 		FD6E77C0265DA597000110FC /* Collection */ = {
@@ -241,8 +231,7 @@
 				FD6E77C8265DA76E000110FC /* CollectionViewController.swift */,
 				FD6E77CB265DA77C000110FC /* CollectionViewController.storyboard */,
 			);
-			name = Collection;
-			path = "New Group1";
+			path = Collection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,12 +362,9 @@
 				FD6E77AC265DA4FE000110FC /* MainViewController.swift in Sources */,
 				FD48A5B926D5324800E2CE77 /* SectionHeader.swift in Sources */,
 				FD48A5AA26CCE8C000E2CE77 /* DetailedViewController.swift in Sources */,
-				FD48A5B126D517B100E2CE77 /* TableView.swift in Sources */,
 				FD6E77A8265DA4FE000110FC /* AppDelegate.swift in Sources */,
 				FD399D1626C52ECA00FDA950 /* NetworkingManager.swift in Sources */,
-				FD48A5B726D5243400E2CE77 /* CollectionView.swift in Sources */,
 				FD420346267A687A004811BC /* User.swift in Sources */,
-				FD43F83A270B5D2F00157522 /* MailMessage.swift in Sources */,
 				FD42034E267A6A89004811BC /* UsersTableViewCell.swift in Sources */,
 				FD48A5B426D51E6A00E2CE77 /* UsersCollectionViewCell.swift in Sources */,
 				FD2CA51426DE44440019D53A /* SearchViewController.swift in Sources */,

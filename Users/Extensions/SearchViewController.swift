@@ -52,9 +52,12 @@ extension SearchingProtocol {
 
 class SearchViewController: UIViewController, SearchingProtocol {
     
+    // to keep track of the pending work item as a property:
+    private var pendingRequestWorkItem: DispatchWorkItem?
+    
     func customizeSearchController (_ controller: UISearchController) {
         //  for informing the class of any text changes within the UISearchBar:
-        controller.searchResultsUpdater = self
+//        controller.searchResultsUpdater = self
         // FALSE - if the current view was setted to show the results, TRUE (default) - when another view controller is used for the searchResultsController:
         controller.obscuresBackgroundDuringPresentation = false
         controller.searchBar.placeholder = "Search by name, city or country"
@@ -69,19 +72,34 @@ class SearchViewController: UIViewController, SearchingProtocol {
     
 }
 
-extension SearchViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-     let searchBar = searchController.searchBar
-     let category = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-     filterContentForSearchText(searchBar.text!, category: category)
-   }
- }
+//extension SearchViewController: UISearchResultsUpdating {
+//    func updateSearchResults(for searchController: UISearchController) {
+//     let searchBar = searchController.searchBar
+//     let category = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+//     filterContentForSearchText(searchBar.text!, category: category)
+//   }
+// }
 
  extension SearchViewController: UISearchBarDelegate {
-   func searchBar(_ searchBar: UISearchBar,
-       selectedScopeButtonIndexDidChange selectedScope: Int) {
-     let category = searchBar.scopeButtonTitles![selectedScope]
-     filterContentForSearchText(searchBar.text!, category: category)
-   }
+   
+     func searchBar(_ searchBar: UISearchBar,
+                    selectedScopeButtonIndexDidChange selectedScope: Int) {
+         let category = searchBar.scopeButtonTitles![selectedScope]
+         filterContentForSearchText(searchBar.text!, category: category)
+     }
+     
+     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+         // Cancel the currently pending item:
+         pendingRequestWorkItem?.cancel()
+         // Wrap the request in a work item:
+         let category = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+         let requestWorkItem = DispatchWorkItem { [weak self] in
+             self?.filterContentForSearchText(searchText, category: category)
+         }
+         // Save the new work item and execute it after 250 ms
+         pendingRequestWorkItem = requestWorkItem
+         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250), execute: requestWorkItem)
+     }
+
  }
 

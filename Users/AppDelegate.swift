@@ -13,8 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        NetworkingManager.shared.downloadUsers(usedUrl: "https://randomuser.me/api/?results=100&inc=name,dob,location,phone,cell,email,picture")
+        
+        let concurrentQueue = DispatchQueue(label: "com.platonova.utility", qos: .utility, attributes: .concurrent)
+        concurrentQueue.async {
+            NetworkingManager.shared.downloadUsers(usedUrl: "https://randomuser.me/api/?results=100&inc=name,dob,location,phone,cell,email,picture")
+        }
+        
+        // to make the NavigationBar transparent:
         let navBar = UINavigationBar.appearance()
                 navBar.shadowImage = UIImage()
                 navBar.barTintColor = .clear
